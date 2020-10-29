@@ -1,0 +1,4 @@
+﻿  Source.cpp
+e:\nha\project1\project1\source.cpp(40): warning C4326: return type of 'main' should be 'int' instead of 'void'
+e:\nha\project1\project1\source.cpp(50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Project1.vcxproj -> E:\Nha\Project1\Debug\Project1.exe
