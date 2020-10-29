@@ -1,0 +1,6 @@
+﻿  Source.cpp
+e:\qui\project1\project1\source.cpp(59): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+e:\qui\project1\project1\source.cpp(75): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+e:\qui\project1\project1\source.cpp(79): warning C4326: return type of 'main' should be 'int' instead of 'void'
+e:\qui\project1\project1\source.cpp(89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Project1.vcxproj -> E:\qui\Project1\x64\Debug\Project1.exe
