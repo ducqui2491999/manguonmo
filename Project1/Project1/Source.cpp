@@ -2,7 +2,9 @@
 #include <cstdlib> 
 #include <ctime> 
 using namespace std;
+
 int randomHieu2so();
+void randomTong();
 
 int tong(int a, int b);
 int hieu(int a, int b);
@@ -35,6 +37,7 @@ void main()
 	cout << dientichhinhcn(a, b);
 	cout << dientichhinhtron(a);
 	cout << "\nHieu 2 so la:" << randomHieu2so();
+	randomTong();
 	system("pause");
 	return 0;
 	
@@ -112,6 +115,16 @@ int randomHieu2so()
 	cout << "\nSo b Random:"<<b;
 	return a - b;
 }
+void randomTong()
+{
+	srand(time(0));
+	int r0 = rand() % 100;
+	int r1 = rand() % 100;
 
+	cout << "\n Số Random 1:" << r0;
+	cout << "\n Số Random 2:" << r1;
+	cout << "\n Tong Random:" << r0 + r1;
+
+}
 
 
