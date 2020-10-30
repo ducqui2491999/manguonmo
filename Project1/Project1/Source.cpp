@@ -4,7 +4,7 @@
 using namespace std;
 
 void randomTong();
-
+int randomHieu2so();
 int tong(int a, int b);
 int hieu(int a, int b);
 int tich(int a, int b);
@@ -24,6 +24,7 @@ void main()
 	cout << tich(a, b);
 	cout << thuong(a, b);
 	randomTong();
+	cout << "\nHieu 2 so la:" << randomHieu2so();
 	system("pause");
 	return 0;
 	
@@ -68,4 +69,17 @@ void randomTong()
 	cout << "\n Tong Random:" << r0 + r1;
 
 }
+  
 
+
+
+
+int randomHieu2so()
+{
+	srand(time(0));
+	int a = rand() % 100;
+	int b = rand() % 100;
+	cout << "\nSo a Random:"<<a;
+	cout << "\nSo b Random:"<<b;
+	return a - b;
+}
