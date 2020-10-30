@@ -3,12 +3,17 @@
 #include <ctime> 
 using namespace std;
 
-void randomTong();
-int randomHieu2so();
+
 int tong(int a, int b);
 int hieu(int a, int b);
 int tich(int a, int b);
 float thuong(float c, float d);
+int chuvihinhvuong(int a);
+int chuvihinhchunhat(int a, int b);
+int chuvihinhtron(int a);
+int dientichhinhvuong(int a);
+int dientichhinhcn(int a, int b);
+int dientichhinhtron(int a);
 
 
 void main()
@@ -23,8 +28,12 @@ void main()
 	cout << hieu(a, b);
 	cout << tich(a, b);
 	cout << thuong(a, b);
-	randomTong();
-	cout << "\nHieu 2 so la:" << randomHieu2so();
+	cout << chuvihinhvuong(a);
+	cout << chuvihinhchunhat(a, b);
+	cout << chuvihinhtron(a);
+	cout << dientichhinhvuong(a);
+	cout << dientichhinhcn(a, b);
+	cout << dientichhinhtron(a);
 	system("pause");
 	return 0;
 	
@@ -56,30 +65,38 @@ float thuong(float c, float d)
 	cout << "\n Thuong la:";
 	return c / d;
 }
-
-
-void randomTong()
+int chuvihinhvuong(int a)
 {
-	srand(time(0));
-	int r0 = rand() % 100;
-	int r1 = rand() % 100;
 
-	cout << "\n Số Random 1:" << r0;
-	cout << "\n Số Random 2:" << r1;
-	cout << "\n Tong Random:" << r0 + r1;
-
+	cout << "\n chu vi hinh vuong la:";
+	return a * 4;
 }
-  
-
-
-
-
-int randomHieu2so()
+int chuvihinhchunhat(int a, int b)
 {
-	srand(time(0));
-	int a = rand() % 100;
-	int b = rand() % 100;
-	cout << "\nSo a Random:"<<a;
-	cout << "\nSo b Random:"<<b;
-	return a - b;
+
+	cout << "\n chu vi hinh chu nhat:";
+	return  (a + b) * 2;
 }
+int chuvihinhtron(int a)
+{
+
+	cout << "\n chu vi hinh tron:";
+	return  2 * a*3.14;
+}
+int dientichhinhvuong(int a)
+{
+
+	cout << "\n dien tich hinh vuong:";
+	return a * a;
+}
+int dientichhinhcn(int a, int b)
+{
+	cout << "\ndien tich hinh chu nhat:";
+	return a * b;
+}
+int dientichhinhtron(int a)
+{
+	cout << "\n dien tich hinhn tron: ";
+	return a * a*3.14;
+}
+
